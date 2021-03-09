@@ -34,17 +34,5 @@ describe("joinNames", () => {
     }
     ])).toEqual('Dean, Calvin, Chris, Dave & Sam');
   });
-  test("returns string of name with no ampersand when only one name", () => {
-    expect(joinNames([{
-      name: "Bart"
-    }
-    ])).toEqual('Bart');
-    expect(joinNames([{
-      name: "Homer"
-    }])).toEqual('Homer');
-    expect(joinNames([{
-      name: "Dean"
-    }
-    ])).toEqual('Dean');
-  });
+
 });
